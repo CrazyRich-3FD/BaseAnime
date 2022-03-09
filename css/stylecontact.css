@@ -1,0 +1,329 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 10px rgb(207, 182, 167);
+    z-index: 1;
+    }
+
+nav ul{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 2% 0 0;
+    width: 40%;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    font-size: 0.8em;
+    list-style: none;
+    cursor: pointer;
+}
+nav li a{
+    position: relative;
+    top: 20%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.bt1{
+    width: 120px;
+    height: 40px;
+    background-color: #ff4800;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bt1 a{
+    color: whitesmoke;
+}
+
+.bt2 a{
+    color: black;
+}
+
+    nav .bs a{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        color: whitesmoke;
+        width: 180px;
+        height: 40px;
+        text-decoration: none;
+        background-color: #e4490b;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 100px;
+        box-shadow: 4px 4px 10px #bd3a06;
+        
+    }
+    
+    nav .bs h2{
+        background: linear-gradient(90deg, #c8ff00, #00ff40, #00ffc8, #003cff, #00ffc8, #00ff40, #c8ff00);
+        background-size: 400%;
+        font-size: 1.8em;
+        font-weight: 600;
+        word-spacing: 5px;
+        cursor: default;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: colouranimasion 20s linear infinite; 
+    }
+
+    .bt2 a:hover{
+        color: #ff4800;
+    }
+
+    .bt3 a:hover{
+        color: #ff4800;
+        text-decoration: underline 1px solid #ff4800;
+    }
+
+    @keyframes colouranimasion {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+    }
+
+    .mt{
+        position: relative;
+        top: 10px;
+        right: -23%;
+        display: none;
+        flex-direction: column;
+        padding-right: 5%;
+        height: 20px;
+        justify-content: space-between;
+    }
+
+    .mt input{
+        position: absolute;
+        width: 40px;
+        height: 27px;
+        opacity: 0;
+        left: -6px;
+        top: -3px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .mt span{
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #e4490b;
+        border-radius: 3px;
+        transition: 500ms;
+    }
+
+    .mt span:nth-child(2){
+        transform-origin: 0 0;
+    }
+
+    .mt span:nth-child(4){
+        transform-origin: 0 100;
+    }
+
+    .mt input:checked~span:nth-child(2){
+        transform: rotate(45deg) translate(3px,-3px);
+    }
+
+    .mt input:checked~span:nth-child(4){
+        transform: rotate(-45deg) translate(5px,-5px);
+    }
+    .mt input:checked~span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    /* isi Contact Us */
+    .contact{
+        position: relative;
+        min-height: 100vh;
+        padding: 5px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .content{
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .content h2{
+        font-size: 36px;
+        font-weight: 500;
+        color: rgb(17, 17, 17);
+    }
+    
+    .content p{
+        font-weight: 300;
+        color: rgb(22, 22, 22);
+    }
+    
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .conntactinfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .box{
+        position: relative;
+        padding: 20px 30px;
+        display: flex;
+    }
+    
+    .icon {
+        min-width: 50px;
+        height: 50px;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .icon img{
+        width: 30px;
+    }
+    
+    .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: rgb(8, 8, 8);
+        flex-direction: column;
+        font-weight: 300;
+    }
+    
+    .text h3{
+        font-weight: 500;
+        color: tomato;
+    }
+    
+    .contactform{
+        width: 40%;
+        padding: 40px;
+        background: #fff;
+    }
+    
+    .contactform h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+    
+    .inputbox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .inputbox input, 
+    .inputbox textarea{
+        width: 100%;
+        padding: 5px 0;
+        margin: 10px 0;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    
+    .inputbox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        margin: 10px 0;
+        font-size: 16px;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    
+    .inputbox input:focus ~ span,
+    .inputbox input:valid ~ span,
+    .inputbox textarea:focus ~ span,
+    .inputbox textarea:valid ~ span
+    {
+        color: #e90e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    
+    .inputbox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* resposive */
+
+    @media screen and (max-width: 992px) {
+
+        /* isi contact us */
+
+        .contact{
+            padding: 50px;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .conntactinfo{
+            margin-bottom: 40px;
+        }
+        .conntactinfo,
+        .contactform
+        {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        
+        /* isi contact us */
+        
+    }
+
+    @media screen and (max-width: 567px){
+        
+        /* isi contact us */
+        
+    }

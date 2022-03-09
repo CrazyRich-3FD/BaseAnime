@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'Courgette', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Source Serif 4', sans-serif;
+    src: url(../Font/Courgette/Courgette-Regular.ttf);
+    src: url(../Font/Permanent_Marker/PermanentMarker-Regular.ttf);
+    src: url(../Font/Source_Serif_4/SourceSerif4-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(../Font/Source_Serif_4/SourceSerif4-VariableFont_opsz\,wght.ttf);
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 123, 0, 0.596);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0,0,0.1);
+    z-index: -5;
+}
+
+.container1{
+    font-family: 'Source Serif 4', sans-serif;
+    position: absolute;
+    margin: 2% auto;
+    padding: 0;
+    width: 70%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: -5;
+}
+
+.judul{
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    text-align: center;
+    width: 70%;
+}
+
+.isi{
+    margin: 5% 0 0 5%;
+    font-family: 'Courgette', cursive;
+}
+
+.isi img{
+    width: 16%;
+    border-radius: 10px;
+    float: left;
+    margin: 0 15px;
+}
+.isi p{
+    margin-left: 10px;
+    width: 85%;
+    text-align: justify;
+
+}
+
+.tabel{
+    font-family: 'Courgette', cursive;
+    position: relative;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(236, 213, 187, 0.377);
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgb(0,0,0.1);
+    border-radius: 10px;
+    width: 60%;
+}
+
+.tabel td{
+    height: 10px;
+    padding: 5px;
+}
+
+.cel1{
+    width: 100px;
+}
+
+.cel2{
+    width: 10px;
+}
+
+.cel3{
+    width: 500px;
+}
+
+.tabel1{
+    font-family: 'Courgette', cursive;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 31%;
+    background-color: #ff480060;
+    border-radius: 10px;
+}
+
+.tabel1 th{
+    font-family: 'Source Serif 4', sans-serif;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: #ff4800;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pixel{
+    padding: 5px;
+    width: 10px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+}
+.link{
+    padding-left: 5px;
+    width: 105px;
+}
+
+.skat{
+    text-align: center;
+    width: 10px;
+}
+
+.tabel1 a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.link :hover{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        width: 80%;
+    }
+
+    .judul{
+        top: 2%;
+    }
+
+    .tabel1{
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .tabel1{
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .container{
+        width: 90%;
+    }
+    .judul{
+        top: 2%;
+        font-size: 0.7em;
+    }
+    .isi{
+        margin: 10% 0 0 5%;
+    }
+
+    .isi img{
+        width: 30%;
+    }
+    .isi p{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .tabel{
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .tabel1{
+        width: 75%;
+        font-size: 0.8em;
+    }
+}

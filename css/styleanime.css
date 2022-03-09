@@ -1,0 +1,506 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* nav{
+    position: fixed;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 10px rgb(207, 182, 167);
+    }
+
+nav ul{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 2% 0 0;
+    width: 40%;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    font-size: 0.8em;
+    list-style: none;
+    cursor: pointer;
+}
+nav li a{
+    position: relative;
+    top: 20%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.bt1{
+    width: 120px;
+    height: 40px;
+    background-color: #ff4800;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bt1 a{
+    color: whitesmoke;
+}
+
+.bt2 a{
+    color: black;
+}
+
+    nav .bs a{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        color: whitesmoke;
+        width: 180px;
+        height: 40px;
+        text-decoration: none;
+        background-color: #e4490b;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 100px;
+        box-shadow: 4px 4px 10px #bd3a06;
+        
+    }
+    
+    nav .bs h2{
+        background: linear-gradient(90deg, #c8ff00, #00ff40, #00ffc8, #003cff, #00ffc8, #00ff40, #c8ff00);
+        background-size: 400%;
+        font-size: 1.8em;
+        font-weight: 600;
+        word-spacing: 5px;
+        cursor: default;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: colouranimasion 20s linear infinite; 
+    }
+
+    .bt2 a:hover{
+        color: #ff4800;
+    }
+
+    .bt3 a:hover{
+        color: #ff4800;
+        text-decoration: underline 1px solid #ff4800;
+    }
+
+    @keyframes colouranimasion {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+    }
+
+    .mt{
+        position: relative;
+        top: 10px;
+        right: -20%;
+        display: none;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+    }
+
+    .mt input{
+        position: absolute;
+        width: 40px;
+        height: 27px;
+        opacity: 0;
+        left: -6px;
+        top: -3px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .mt span{
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #e4490b;
+        border-radius: 3px;
+        transition: 500ms;
+    }
+
+    .mt span:nth-child(2){
+        transform-origin: 0 0;
+    }
+
+    .mt span:nth-child(4){
+        transform-origin: 0 100;
+    }
+
+    .mt input:checked~span:nth-child(2){
+        transform: rotate(45deg) translate(3px,-3px);
+    }
+
+    .mt input:checked~span:nth-child(4){
+        transform: rotate(-45deg) translate(5px,-5px);
+    }
+    .mt input:checked~span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
+    } */
+
+    /* isi anime */
+
+    .container{
+        position: absolute;
+        margin: 2% auto;
+        padding: 50px;
+        top: 0;
+        left: 8%;
+        width: 80%;
+        z-index: -5;
+    }
+
+    /* ------search------ */
+
+    .cf:before, .cf:after{
+        content:"";
+        display:table;
+    }
+    
+    .cf:after{
+        clear:both;
+    }
+
+    .cf{
+        zoom:1;
+    }
+
+    /*-------------------------------------*/	
+    
+    .form-wrapper {
+        width: 600px;
+        margin: auto;
+    }
+    
+    .form-wrapper input {
+        width: 480px;
+        height: 15px;
+        padding: 10px 5px;
+        float: left;    
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        border: 0;
+        background: rgb(194, 176, 176);
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;      
+    }
+    
+    .form-wrapper input:focus {
+        outline: 0;
+        background: #fff;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+    
+    .form-wrapper input::-webkit-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .form-wrapper input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .form-wrapper input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }    
+    
+    .form-wrapper button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 35px;
+        width: 110px;
+        font: bold 12px/35px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        color: #fff;
+        text-transform: uppercase;
+        background: #d83c3c;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+        
+    .form-wrapper button:hover{		
+        background: #e54040;
+    }	
+        
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: #c42f2f;    
+    }
+    
+    .form-wrapper button:before {
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #d83c3c transparent;
+        top: 9px;
+        left: -6px;
+    }
+    
+    .form-wrapper button:hover:before{
+        border-right-color: #e54040;
+    }
+    
+    .form-wrapper button:focus:before{
+        border-right-color: #c42f2f;
+    }    
+    
+    .form-wrapper button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    /* ------------------- */
+
+    .alfa{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+    }
+
+    .alfa1{
+        position: relative;
+        margin-right: 10px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(2, 241, 182, 0.719);
+        padding-top: 5px;
+        width: 30px;
+        height: 23px;
+        border-radius: 5px;
+    }
+
+    .alfa1 a{
+        text-align: center;
+    }
+
+    .alfa1 :hover{
+        margin-top: -5px;
+        padding-top: 5px;
+        width: 30px;
+        height: 23px;
+        border-radius: 5px;
+        background-color: blue;
+        color: whitesmoke;
+    }
+
+    /* ------------------ */
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .bag1{
+        margin: 3% auto;
+        padding: 0;
+        align-content: center;
+    }
+
+    .anm1{
+        display: inline-flex;
+        margin-left: 0;
+        margin-bottom: 2%;
+        font-size: 11px;
+        text-align: center;
+    }
+
+
+
+    .anm1 img{
+        margin-bottom: 5%;
+        width: 150px;
+        height: 220px;
+        border-radius: 5%;
+    }
+
+    img{
+        filter: grayscale(0);
+    }
+
+    img:hover{
+        filter: grayscale(30%);
+    }
+
+    .anm1 :hover{
+        color: #ff4800;
+    }
+
+    /* resposive */
+
+    
+
+    @media screen and (max-width: 992px){
+        
+        /* isi anime */
+        
+        .container{
+            left: 10%;
+            top: 2%;
+        }
+        
+        .alfa{
+            width: 80%;
+        }
+
+        .bag1{
+            margin: 3% 0 2% -16%;
+        }
+
+        .anm1{
+            margin:0 0 2% 0.5%;
+        }
+
+        .anm1 img{
+            width: 135px;
+        }
+        
+        .anm1 h3{
+            padding-top: 5px;
+            padding-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+    }
+
+    @media screen and (max-width: 768px){
+        
+        /* isi anime */
+        
+        .container{
+            left: 10%;
+            top: 2%;
+        }
+
+        .form-wrapper{
+            position: relative;
+            left: 50%;
+            transform: translate(-60%);
+        }
+
+        .alfa{
+            position: relative;
+            left: 50%;
+            transform: translate(-60%);
+            margin: 0;
+            width: 95%;
+        }
+
+        .bag1{
+            margin: 5% 0 2% -16%;
+        }
+
+        .anm1{
+            margin:0 0 2% 0.5%;
+            width: 135px;
+            font-size: 0.7em;
+        }
+
+    }
+
+    @media screen and (max-width: 567px) {
+
+        /* isi anime */
+
+        .container{
+            left: 1%;
+            width: 70%;
+        }
+
+        .form-wrapper{
+            left: 50%;
+            transform: translate(-48%);
+            width: 350px;
+            background-color: violet;
+        }
+
+        .form-wrapper input{
+            width: 260px;
+            height: 5px;
+            font-size: 10px;
+        }
+
+        .form-wrapper button{
+            width: 80px;
+            height: 25px;
+            font: bold 10px/20px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        }
+
+        .form-wrapper button:before{
+            top: 5px;
+        }
+
+        .alfa{
+            left: 50%;
+            transform: translate(-48%);
+            margin: 0;
+            width: 140%;
+        }
+
+        .alfa1{
+            margin-right: 5px;
+            width: 20px;
+            height: 15px;
+            font-size: 0.7em;
+        }
+
+        .alfa1 :hover{
+            width: 20px;
+            height: 15px;
+            font-size: 0.8em;
+        }
+
+        .container .bag1{
+            position: relative;
+            margin-top: 10%;
+            left: -3%;
+            width: 138%;
+        }
+        .anm1{
+            width: 110px;
+            height: 185px;
+            font-size: 9px;
+
+        }
+
+        .anm1 img{
+            width: 110px;
+            height: 150px;
+        }
+    }

@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px auto;
+	padding: 0;
+	overflow: auto;
+	font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+/* isi navbar */
+
+/* nav{
+	position: fixed;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+	width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 10px rgb(207, 182, 167);
+    }
+
+nav ul{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 2% 0 0;
+    width: 40%;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    font-size: 0.8em;
+    list-style: none;
+    cursor: pointer;
+}
+nav li a{
+    position: relative;
+    top: 20%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.bt1{
+    width: 120px;
+    height: 40px;
+    background-color: #ff4800;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bt1 a{
+    color: whitesmoke;
+}
+
+.bt2 a{
+    color: black;
+}
+
+    nav .bs a{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        color: whitesmoke;
+        width: 180px;
+        height: 40px;
+        text-decoration: none;
+        background-color: #e4490b;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 100px;
+        box-shadow: 4px 4px 10px #bd3a06;
+        
+    }
+    
+    nav .bs h2{
+        background: linear-gradient(90deg, #c8ff00, #00ff40, #00ffc8, #003cff, #00ffc8, #00ff40, #c8ff00);
+        background-size: 400%;
+        font-size: 1.8em;
+        font-weight: 600;
+        word-spacing: 5px;
+        cursor: default;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: colouranimasion 20s linear infinite; 
+    }
+
+    .bt2 a:hover{
+        color: #ff4800;
+    }
+
+    .bt3 a:hover{
+        color: #ff4800;
+        text-decoration: underline 1px solid #ff4800;
+    }
+
+    @keyframes colouranimasion {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+    }
+
+    .mt{
+        position: relative;
+        top: 10px;
+        right: -20%;
+        display: none;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+    }
+
+    .mt input{
+        position: absolute;
+        width: 40px;
+        height: 27px;
+        opacity: 0;
+        left: -6px;
+        top: -3px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .mt span{
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #e4490b;
+        border-radius: 3px;
+        transition: 500ms;
+    }
+
+    .mt span:nth-child(2){
+        transform-origin: 0 0;
+    }
+
+    .mt span:nth-child(4){
+        transform-origin: 0 100;
+    }
+
+    .mt input:checked~span:nth-child(2){
+        transform: rotate(45deg) translate(3px,-3px);
+    }
+
+    .mt input:checked~span:nth-child(4){
+        transform: rotate(-45deg) translate(5px,-5px);
+    }
+    .mt input:checked~span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
+    } */
+
+/* isi login */
+
+.arc5{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 450px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+	z-index: -5;
+}
+
+.arc5 h1{
+	text-align: center;
+	padding: 20px 0;
+	color: black;
+	border-bottom: 5px solid #ff4800;
+}
+
+.arc5 form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .uspass{
+	position: relative;
+	border-bottom: 2px solid #ff4800;
+	margin: 30px 0;
+}
+
+.uspass input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 17px;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: text;
+}
+
+.uspass label{
+	position: absolute;
+	top: 60%;
+	left: 5px;
+	color: black;
+	transform: translateY(-40%);
+	font-size: 17px;
+	pointer-events: none;
+	transition: 500ms;
+	cursor: text;
+}
+
+.uspass span::before{
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: whitesmoke;
+	transition: 500ms;
+}
+
+.uspass input:focus~label,
+.uspass input:valid~label{
+	top: -3px;
+	color: black;
+}
+
+.uspass input:focus~span::before,
+.uspass input:valid~span::before{
+	width: 100%;
+}
+
+.pass{
+	margin: -5px 0 20px 5px;
+	color: black;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.pass:hover{
+	text-decoration: underline;
+}
+
+input[type="button"]{
+	width: 100%;
+	height: 50px;
+	border: 2px solid;
+	background: #ff4800;
+	border-radius: 20px;
+	font-size: 18px;
+	color: black;
+	font-weight: 700;
+	border-color: #ff4800;
+	cursor: pointer;
+	outline: none;
+}
+
+input[type="button"]:hover{
+	border-color: whitesmoke;
+	transition: 250ms;
+}
+
+.Daftar{
+	margin: 30px 0;
+	text-align: center;
+	font-size: 14px;
+	color: black;
+}
+
+.Daftar a{
+	color: darkblue;
+	text-decoration: none;
+}
+
+.Daftar a:hover{
+	text-decoration: underline;
+}
+
+/* resposive */
+
+@media screen and (max-width: 992px){
+	
+	/* isi login */
+	.arc5{
+		top: 50%;
+		width: 325px;
+		height: 425px;
+		font-size: 15px;
+	}
+
+	form .uspass{
+		margin: 25px 0;
+	}
+
+	.uspass label{
+		font-size: 14px;
+	}
+
+	.uspass input{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	/* isi login */
+	.arc5{
+		top: 50%;
+		width: 325px;
+		height: 425px;
+		font-size: 15px;
+	}
+
+	form .uspass{
+		margin: 25px 0;
+	}
+
+	.uspass label{
+		font-size: 14px;
+	}
+
+	.uspass input{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 567px) {
+
+	/* isi login */
+
+	.arc5{
+		top: 50%;
+		width: 325px;
+		height: 425px;
+		font-size: 15px;
+	}
+
+	form .uspass{
+		margin: 25px 0;
+	}
+
+	.uspass label{
+		font-size: 14px;
+	}
+
+	.uspass input{
+		font-size: 14px;
+	}
+}
